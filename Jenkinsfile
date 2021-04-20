@@ -1,6 +1,6 @@
 pipeline{
   
-  agent {lable 'mykube'}
+  agent {label 'mykube'}
    
   stages {
 
