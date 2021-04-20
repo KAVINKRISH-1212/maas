@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "mydeploy-maas"
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: "mypod"
+      labels:
+        app: web
+        team: team1
+        region: IN
+    spec:
+      containers:
+        - name: "myc1"
+          image: "kavinkrish/maas:v1"    
