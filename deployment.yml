@@ -7,10 +7,6 @@ spec:
   template:
     metadata:
       name: "mypod"
-      labels:
-        app: web
-        team: team1
-        region: IN
     spec:
       containers:
         - name: "myc1"
