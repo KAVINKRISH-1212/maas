@@ -1,9 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "mydeploy-maas"
+  name: "mydeploy"
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: web
+    matchExpressions:
+      - { key: team, operator: In, values: [team1,team2] }
+      - { key: region, operator: In, values: [IN] }
   template:
     metadata:
       name: "mypod"
