@@ -1,5 +1,7 @@
 pipeline{
-
+  
+  agent {label 'mykube'}
+   
   stages {
 
     stage('Checkout Source') {
