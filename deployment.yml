@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: "myc1"
-          image: "kavinkrish/maas:v1"    
+          image: "vimal13/apache-webserver-php"    
